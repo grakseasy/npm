@@ -52,20 +52,23 @@ async function getEmployees(order) {
 	
 	if(order === "ascending"){
 		arr3.sort(function(a, b) {
-			return parseFloat(a.id) - parseFloat(b.id);
+			return parseFloat(a.salary) - parseFloat(b.salary);
 		});
 	  }
 	else if(order === "descending"){
 		arr3.sort(function(a, b) {
-			return parseFloat(b.id) - parseFloat(a.id);
+			return parseFloat(b.salary) - parseFloat(a.salary);
 		});
 	  }
+	else{
+		console.log("You need to choose between 'ascending' and 'descending'! ")
+	}
 	  
 	console.log(arr3)
 	return arr3
 }
 
-var result = getEmployees("ascending");
+var result = getEmployees("descending");
 console.log(result);
 
-module.exports.getEmployees = getEmployees;
+

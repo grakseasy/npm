@@ -4,7 +4,7 @@
 **2)** I was given 3 functions to work with. I gave myself freedom to use them how I wanted:
 
     1. getEmplFrom() - returns the employees from the fake server
-    2.abRmnSal() - returns the salaries from the fake server
+    2. abRmnSal() - returns the salaries from the fake server
     3. getEmployees - returns the employees with their salaries
 
 **3)** I made some modifications to the code for the getEmplFrom() function, and used it for the abRmnSal() function as well. I got rid of the 'domain' parameter in the XMLHTTPRequest.opne() function. 

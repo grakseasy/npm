@@ -37,7 +37,7 @@ function abRmnSal(path) {
 }
 
 
-async function getEmployees(order) {
+export async function getEmployees(order) {
 
 	//TODO should be exposed function which returns array of employees => for example [{id:"id", "name":"test", "salary":""}]
 	

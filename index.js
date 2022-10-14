@@ -69,7 +69,7 @@ async function getEmployees(order) {
 	}
 	  
 	
-	return arr3
+	 return arr3
 }
 
 //printing the result in the console

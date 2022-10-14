@@ -1,3 +1,4 @@
+
 function getEmplFrom(path) {
 	return new Promise((resolve, reject) => {
 		var xhr = new XMLHttpRequest();
@@ -37,7 +38,8 @@ function abRmnSal(path) {
 }
 
 
-export async function getEmployees(order) {
+
+async function getEmployees(order) {
 
 	//TODO should be exposed function which returns array of employees => for example [{id:"id", "name":"test", "salary":""}]
 	
@@ -68,7 +70,8 @@ export async function getEmployees(order) {
 	return arr3
 }
 
-var result = getEmployees("descending");
+var result = getEmployees("ascending");
 console.log(result);
 
 
+module.exports = { getEmployees };
